@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<div class="container">
+    <header class="header">
+        <h1>Student Management System</h1>
+        <p>Manage student records with a clean and modern dashboard</p>
+    </header>
+
+    <section class="card form-card">
+        <div class="card-title">
+            <h2 id="formTitle">Add Student</h2>
+            <span class="status-badge">Spring Boot + MySQL</span>
+        </div>
+
+        <form id="studentForm">
+            <input type="hidden" id="studentId" />
+
+            <div class="form-grid">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter student name" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter email address" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" placeholder="Enter course name" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter age" required />
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary" id="submitBtn">Add Student</button>
+                <button type="button" class="btn btn-secondary" id="cancelBtn" onclick="resetForm()">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card table-card">
+        <div class="card-title">
+            <h2>Student Records</h2>
+            <button class="btn btn-outline" onclick="loadStudents()">Refresh</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                <!-- Student data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
