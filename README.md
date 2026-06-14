@@ -226,6 +226,12 @@ Returns: 200 OK with success message
 ```
 
 ---
+## 📸 Screenshots
+
+### 🏠 Dashboard
+![Dashboard](assets/dashboard.png)
+
+---
 
 ## 🌱 What This Project Demonstrates
 
