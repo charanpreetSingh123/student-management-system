@@ -84,7 +84,7 @@ Manage student records effortlessly through a clean, responsive dark-themed UI b
 ┌────────────────────▼────────────────────────────┐
 │             Repository Layer                     │
 │        StudentRepository.java                    │
-│    Spring Data JPA — extends JpaRepository       │
+│    Spring Data JPA  extends JpaRepository       │
 └────────────────────┬────────────────────────────┘
                      │  JPA / Hibernate
 ┌────────────────────▼────────────────────────────┐
